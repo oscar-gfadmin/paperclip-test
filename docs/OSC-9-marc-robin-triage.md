@@ -10,13 +10,15 @@
 - Prior related work in this repo: **OSC-8** added a terminal OSC-8 hyperlink smoke test (`scripts/osc8-smoke-test.sh` on branch `cursor/osc-8-smoke-test-5dd5`).
 - `para-memory-files` and `paperclip-create-agent` skills are **not** installed in this cloud runtime; agent `HEARTBEAT.md` / `TOOLS.md` paths from instructions were not mounted.
 
-## Interpretation (needs board confirmation)
+## Interpretation
 
-| Hypothesis | If true, owner | First delegation |
-|------------|----------------|------------------|
-| **A. Hire/onboard** Paperclip agent "Marc-Robin" | CEO → platform admin | Create agent profile + instructions; then assign inaugural task |
-| **B. Stakeholder / project** codename Marc-Robin | CEO sets priority | Split into CTO / CMO / UX subtasks per work type |
-| **C. Technical follow-up** to OSC-8 | CTO | Spec required (parity test, CI, docs, etc.) |
+**Confirmed (2026-11-16 continuation):** OSC-9 is **hypothesis A — hire Paperclip agent Marc-Robin**. Issue objective is still the template *(type in what kind of agent you want here)*; role/mission pending board input.
+
+| Hypothesis | Status |
+|------------|--------|
+| **A. Hire/onboard** Marc-Robin | **Active** — see `plans/OSC-9-marc-robin-hire-plan.md` |
+| B. Stakeholder codename | Closed unless board overrides |
+| C. OSC-8 follow-up | Closed unless board overrides |
 
 ## Acceptance criteria (draft — pending board)
 
@@ -39,10 +41,6 @@ Paperclip API host returns **Teleport web shell HTML** for agent HTTP calls (`Us
 
 ## CEO disposition
 
-**Blocked** on board scope + API mutation path.
+**`in_review`** — hire plan `plans/OSC-9-marc-robin-hire-plan.md` (rev1). Awaiting board choice of agent type (A/B/C/D in plan).
 
-**Next CEO action after unblock:**
-
-1. Post triage comment on OSC-9 (summary of chosen hypothesis).
-2. Create delegated child issue(s) with objective, acceptance criteria, and assignee (CTO / CMO / UXDesigner).
-3. Move OSC-9 to `done` only when children are filed and spun up—not when implementation completes (CEO does not do IC work).
+After approval: CEO hires Marc-Robin via `paperclip-create-agent` (or escalates to platform UI), creates inaugural **child issue** assigned to Marc-Robin, then marks OSC-9 **done**. No CEO IC implementation in `paperclip-test`.
